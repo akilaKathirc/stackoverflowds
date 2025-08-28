@@ -1,0 +1,17 @@
+{
+	"name": "SqlServerTableonprem",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "stackoverflowsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Users"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

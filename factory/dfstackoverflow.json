@@ -1,0 +1,9 @@
+{
+	"name": "dfstackoverflow",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ef4563b2-54b7-48ce-a2e5-462f8f1e19f4",
+		"tenantId": "288ffd2c-f09c-4154-ad8e-9c674ebe9dfa"
+	}
+}

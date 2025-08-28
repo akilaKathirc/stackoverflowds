@@ -1,0 +1,21 @@
+{
+	"name": "stackoverflowsql",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "CHENG\\SQLEXPRESS",
+			"database": "StackOverflow2010",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "akila1",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI0NTU2ZjI4Ny0wZTBiLTRlZjItOThhNC01ZDUwMTdlZTNiMDQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "stackoverflowshir",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
