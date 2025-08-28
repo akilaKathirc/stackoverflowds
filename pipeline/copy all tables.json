@@ -21,7 +21,7 @@
 						"partitionOption": "None"
 					},
 					"dataset": {
-						"referenceName": "SqlServerTableonprem",
+						"referenceName": "SqlServeronprem",
 						"type": "DatasetReference"
 					}
 				}
