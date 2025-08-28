@@ -1,0 +1,12 @@
+{
+	"name": "SqlServerOnpremcopy",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "stackoverflowsql",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": []
+	}
+}
