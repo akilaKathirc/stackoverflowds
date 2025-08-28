@@ -17,14 +17,18 @@
 				"typeProperties": {
 					"source": {
 						"type": "SqlServerSource",
-						"sqlReaderStoredProcedureName": "[dbo].[getalltables]",
+						"sqlReaderQuery": {
+							"value": "SELECT sch.name AS SchemaName,\ntab.name AS TableName\nFROM sys.tables AS tab\nINNER JOIN\nsys.schemas AS sch\nON tab.schema_id =sch.schema_id\nWHERE sch.name= 'dbo'",
+							"type": "Expression"
+						},
 						"queryTimeout": "02:00:00",
 						"partitionOption": "None"
 					},
 					"dataset": {
 						"referenceName": "SqlServeronprem",
 						"type": "DatasetReference"
-					}
+					},
+					"firstRowOnly": false
 				}
 			}
 		],
