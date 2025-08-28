@@ -1,0 +1,76 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStoragegen2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bronze"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Id",
+				"type": "INT32"
+			},
+			{
+				"name": "AboutMe",
+				"type": "UTF8"
+			},
+			{
+				"name": "Age",
+				"type": "INT32"
+			},
+			{
+				"name": "CreationDate",
+				"type": "INT96"
+			},
+			{
+				"name": "DisplayName",
+				"type": "UTF8"
+			},
+			{
+				"name": "DownVotes",
+				"type": "INT32"
+			},
+			{
+				"name": "EmailHash",
+				"type": "UTF8"
+			},
+			{
+				"name": "LastAccessDate",
+				"type": "INT96"
+			},
+			{
+				"name": "Location",
+				"type": "UTF8"
+			},
+			{
+				"name": "Reputation",
+				"type": "INT32"
+			},
+			{
+				"name": "UpVotes",
+				"type": "INT32"
+			},
+			{
+				"name": "Views",
+				"type": "INT32"
+			},
+			{
+				"name": "WebsiteUrl",
+				"type": "UTF8"
+			},
+			{
+				"name": "AccountId",
+				"type": "INT32"
+			}
+		]
+	}
+}
