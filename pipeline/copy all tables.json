@@ -30,6 +30,25 @@
 					},
 					"firstRowOnly": false
 				}
+			},
+			{
+				"name": "ForEachAllTables",
+				"type": "ForEach",
+				"dependsOn": [
+					{
+						"activity": "copy all onprem tables",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"items": {
+						"value": "@activity('copy all onprem tables').output.value",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"annotations": []
